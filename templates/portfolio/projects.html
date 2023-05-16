@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    <html>
+        <br><br><br>
+    <head>
+        <title>Testimonials</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .testimonial {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+            .testimonial img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            
+            .testimonial .content {
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Testimonials</h1>    
+        <div class="testimonial">
+            <div class="content">
+                <h2>Project 1</h2>
+                <p>"The Project 1, crafted by Sana, showcases an innovative approach to solving complex problems and leaves a lasting impression on its audience."</p>
+            </div>
+        </div>       
+        <div class="testimonial">
+            <div class="content">
+                <h2>Project 2</h2>
+                <p>"For Project 2, Sana showcases her exceptional skills in web development, creating a visually stunning and user-friendly website that captivates users."
+                </div>
+        </div>       
+        <div class="testimonial">
+            <div class="content">
+                <h2>project 3</h2>
+                <p>"Project 3, created by Sana, showcases innovative solutions and cutting-edge technologies to revolutionize the industry."</p>
+            </div>
+            <br><br>
+        </div>
+    {% endblock %}

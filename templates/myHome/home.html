@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br><br><br>
+    <body>
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>My awesome website</h1>
+                <h2>Look at this website and bask in its amazing glory!</h2>
+                <a href="{% url 'portfolio' %}" class="btn">Go ahead..</a>
+            </div>
+        </section>
+        <style type="text/css">
+            body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid rgb(255, 255, 255,0.4); /* CHANGE THIS LINE */
+    border-radius: 20px;
+    /* Background styles */
+    background-color:rgb(255, 228, 196,0.6);
+
+}
+        </style>
+    </body>
+  
+    {% endblock %}

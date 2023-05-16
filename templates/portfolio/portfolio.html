@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+
+    <br><br><br>
+    <style type="text/css">
+        /* style.css from bootstrab*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    background-color: #f2f2f2;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.project {
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.project h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #555;
+}
+
+
+    </style>
+    <section class="projects">
+        <div class="project">
+            <img src="{% static 'img\blog.jpg' %}" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>"The Project 1, crafted by Sana, showcases an innovative..."</p>
+            <a href='{% url "projects" %}'>View Project details</a>
+        </div>
+        <div class="project">
+            <img src="{% static 'img\ss.jpg' %}" alt="Project 2">
+            <h2>Project 2</h2>
+            <p>"For Project 2, Sana showcases her exceptional..."
+            </p>
+            <a href='{% url "projects" %}'>View Project details</a>
+        </div>
+        
+        <div class="project">
+            <img src="{% static 'img\sss.jpg' %}" alt="Project 3">
+            <h2>Project 3</h2>
+            <p>"Project 3, created by Sana, showcases innovative solutions and ..."</p>
+            <a href='{% url "projects" %}'>View Project details</a>
+        </div>
+    </section>
+{% endblock %}

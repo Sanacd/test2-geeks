@@ -1,0 +1,60 @@
+<header>
+    <!-- Add your header content here -->
+    <h1 id="main">Sana's Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'myHome' %}">Home</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href='{% url "blog" %}'>Blog</a></li>
+            <li><a href='{% url "contacts" %}'>Contact Me</a></li>
+            <li><a href='{% url "projects" %}'>Projects</a></li>
+            <li><a href='{% url "testimonials" %}'>Testimonials</a></li>
+        </ul>
+    </nav>
+</header>
+<style type="text/css">
+    #main {
+        text-align: left;
+        color: white;
+        text-indent: 40px;
+        font-family: Arial, sans-serif;
+    }
+
+    ul li a:hover {
+        /* Hover style for navigation links */
+        color: bisque;
+        /* Change the color to your desired hover color */
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+</style>
